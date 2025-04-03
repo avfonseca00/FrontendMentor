@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github solution repo](https://github.com/avfonseca00/FrontendMentor/tree/main/3-column-preview-card-component-main)
+- Live Site URL: [Live site URL](https://3-column-preview-card-villadev.vercel.app/)
 
 ## My process
 
