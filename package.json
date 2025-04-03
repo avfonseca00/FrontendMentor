@@ -1,0 +1,19 @@
+{
+  "name": "frontendmentor",
+  "version": "1.0.0",
+  "description": "Frontend Mentor Challenges solutions by VillaDev",
+  "main": "index.js",
+  "scripts": {
+    "co": "sui-mono commit",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "frontend",
+    "challenge"
+  ],
+  "author": "VillaDev",
+  "license": "ISC",
+  "dependencies": {
+    "@s-ui/mono": "^2.45.0"
+  }
+}
