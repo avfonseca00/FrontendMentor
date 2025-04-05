@@ -26,6 +26,8 @@
     --text-medium-13: normal normal 500 13px/150% 'Manrope';
     --text-bold-13: normal normal 700 13px/150% 'Manrope';
 
+    --text-bold-16: normal normal 700 16px/140% 'Manrope';
+
     /*--------------
          SPACING 
     ----------------*/
@@ -188,3 +190,34 @@ html, body, .wrapper {
 ::-webkit-scrollbar {  
     display: none;  
 }  
+
+@media screen and (max-width: 576px) {  
+    .content{
+        padding: 1.3rem;
+        height: auto;
+    }
+    .card{
+        flex-direction: column;
+        height: auto;
+    }
+    .card__content{
+        padding: 40px 30px;
+    }
+    .img__container{
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+        border-top-left-radius: var(--border-10);
+        border-top-right-radius: var(--border-10);
+    }
+    .article__image{
+        width: 100%;
+    }
+    .article__text{
+        row-gap: var(--size-12);
+    }
+    .title{
+        font: var(--text-bold-16);
+        color: var(--Very-Dark-Grayish-Blue);
+    }
+}
