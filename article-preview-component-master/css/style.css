@@ -1,0 +1,188 @@
+@font-face {
+    font-family: 'Manrope';
+    src: url('../fonts/Manrope/Manrope-VariableFont_wght.ttf');
+}
+
+:root{
+
+    /*--------------
+         COLORS 
+    ----------------*/
+
+    /* Neutral*/
+    --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+    --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+    --Grayish-Blue: hsl(212, 23%, 69%);
+    --Light-Grayish-Blue: hsl(210, 46%, 95%);
+    --White: hsl(0, 0%, 100%);
+
+    --Grayish-Blue-25: hsla(212, 23%, 69%, 0.25);
+
+    /*--------------
+         FONTS 
+    ----------------*/
+
+    --text-bold-20: normal normal 700 20px/140% 'Manrope';
+    --text-medium-13: normal normal 500 13px/150% 'Manrope';
+    --text-bold-13: normal normal 700 13px/150% 'Manrope';
+
+    /*--------------
+         SPACING 
+    ----------------*/
+    --size-20: 20px;
+    --size-16: 16px;
+    --size-12: 12px;
+
+    /*--------------
+         RADIUS 
+    ----------------*/
+    --border-10: 10px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body, .wrapper {  
+    height: 100%;   
+    margin: 0;  
+}  
+
+.wrapper {  
+    display: flex;   
+    flex-direction: column;   
+}  
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 720px;
+    background-color: var(--Light-Grayish-Blue);
+    color: var(--Desaturated-Dark-Blue);
+    font: var(--text-medium-13);
+    letter-spacing: 0.1px;
+    overflow: hidden;
+}
+.card{
+    display: flex;
+    width: 730px;
+    height: 280px;
+    margin: 8rem 0;
+    background-color: var(--White);
+    border-radius: var(--border-10);
+    z-index: 99;
+    box-shadow: 8px 16px 40px 0px var(--Grayish-Blue-25);
+}
+.img__container{
+    width: 285px;
+    display: flex;
+    overflow: hidden;
+}
+.article__image{
+    height: 100%;
+}
+.card__content{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    row-gap: var(--size-20);
+    padding: 32px 40px;
+}
+.article__text{
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--size-12);
+}
+.title{
+    font: var(--text-bold-20);
+    color: var(--Very-Dark-Grayish-Blue);
+}
+.author__share{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.author__container{
+    display: flex;
+    align-items: center;
+    column-gap: var(--size-16);
+}
+.avatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.name{
+    font: var(--text-bold-13);
+    letter-spacing: 0.1px;
+    color: var(--Very-Dark-Grayish-Blue);
+}
+.share__button{
+    width: 32px;
+    height: 32px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Light-Grayish-Blue);
+    border-radius: 50%;
+}
+.popup{
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    column-gap: 22px;
+    /* width: 248px; */
+    height: 55px;
+    padding: 0 36px;
+    background-color: var(--Very-Dark-Grayish-Blue);
+    transform: translate(-50%,-50%);
+    border-radius: var(--border-10);
+    box-shadow: 8px 16px 40px 0px var(--Grayish-Blue-25);
+}
+.popup__arrow{
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    width: 10px;
+    height: 8px;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-top: 16px solid var(--Very-Dark-Grayish-Blue);
+    transform: translate(-50%, 100%);
+}
+.popup__text{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: var(--Grayish-Blue);
+}
+.social__icons{
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+}
+
+.attribution {   
+    font-family: 'Manrope';  
+    font-size: 12px;   
+    font-weight: 400;  
+    line-height: 150%;  
+    text-align: center;   
+    background-color: var(--Light-Grayish-Blue);   
+    padding: 1rem 0;   
+    position: relative;   
+}  
+
+.attribution a {   
+    text-decoration: none;  
+    font-weight: 900;  
+    color: var(--Very-Dark-Grayish-Blue);  
+}  
+
+::-webkit-scrollbar {  
+    display: none;  
+}  
