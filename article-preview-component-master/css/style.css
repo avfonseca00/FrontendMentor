@@ -79,6 +79,8 @@ html, body, .wrapper {
     width: 285px;
     display: flex;
     overflow: hidden;
+    border-top-left-radius: var(--border-10);
+    border-bottom-left-radius: var(--border-10);
 }
 .article__image{
     height: 100%;
