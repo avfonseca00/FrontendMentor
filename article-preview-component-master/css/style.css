@@ -110,8 +110,12 @@ html, body, .wrapper {
 }
 .author__container{
     display: flex;
+    visibility: visible;
     align-items: center;
     column-gap: var(--size-16);
+}
+.author__container.visibility{
+    visibility: visible;
 }
 .avatar{
     width: 40px;
@@ -211,10 +215,12 @@ html, body, .wrapper {
     }
     .card{
         flex-direction: column;
+        gap: 40px;
         height: auto;
+        overflow: hidden;
     }
     .card__content{
-        padding: 40px 30px;
+        padding: 0;
     }
     .img__container{
         width: 100%;
@@ -228,9 +234,44 @@ html, body, .wrapper {
     }
     .article__text{
         row-gap: var(--size-12);
+        padding: 0 30px;
     }
     .title{
         font: var(--text-bold-16);
         color: var(--Very-Dark-Grayish-Blue);
+    }
+    .author__share{
+        padding: 20px 30px;
+        position: relative;
+    }
+    .author__container{
+        visibility: visible;
+    }
+    .author__container.visibility{
+        visibility: hidden;
+    }
+    .share__button{
+        position: static;
+    }
+    .popup{
+        visibility: hidden;
+        box-sizing: content-box;
+        opacity: 0;
+        width: 100%;
+        padding: 20px;
+        height: 40px;
+        left: 0;
+        bottom: 0;
+        transform: none;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        z-index: -1;
+}
+    .popup__arrow{
+        display: none;
     }
 }
