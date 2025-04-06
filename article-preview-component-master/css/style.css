@@ -133,23 +133,33 @@ html, body, .wrapper {
     background-color: var(--Light-Grayish-Blue);
     border-radius: 50%;
 }
+.share__button:hover{
+    cursor: pointer;
+}
 .popup{
     position: absolute;
     bottom: 32px;
     left: 50%;
-    display: none;
+    transform: translate(-50%,-50%);
+    height: 55px;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
     align-items: center;
-    column-gap: 22px;
-    /*width: 248px;
-    */height: 55px;
+    gap: 22px;
     padding: 0 36px;
     background-color: var(--Very-Dark-Grayish-Blue);
-    transform: translate(-50%,-50%);
     border-radius: var(--border-10);
     box-shadow: 8px 16px 40px 0px var(--Grayish-Blue-25);
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
 }
 .popup.visible {  
-    display: flex; 
+    visibility: visible;
+    opacity: 1;
 } 
 .popup__arrow{
     position: absolute;
