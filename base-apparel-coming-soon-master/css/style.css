@@ -52,7 +52,7 @@
     align-items: center;
     justify-content: center; */
     width: 100%;
-    height: 800px;
+    /* height: 800px; */
     font: var(--text-medium-13);
     letter-spacing: 0.1px;
     overflow: hidden;
@@ -62,13 +62,19 @@
     width: 100%;
     background-color: var(--White);
 }
+.navbar__mobile{
+    display: none;
+}
 .img__container{
     width: auto;
     display: flex;
     overflow: hidden;
 }
-.article__image{
+.article__image__desktop{
     width: 100%;
+}
+.article__image__mobile{
+    display: none;
 }
 .card__content{
     position: relative;
@@ -124,6 +130,7 @@
 }
 .paragraph{
     font: var(--text-regular-16);
+    line-height: 160%;
     color: var(--Desaturated-Red);
     max-width: 450px;
 }
@@ -134,6 +141,7 @@
     border: 1px solid var(--Desaturated-Red);
     border-radius: 50px;
     padding-left: 32px;
+    height: 54px;
     max-width: 443px;
 }
 .input{
@@ -141,7 +149,7 @@
     outline: none;
     background-color: transparent;
     font: var(--text-regular-16);
-    height: 54px;
+    height: 100%;
     line-height: 54px;
 }
 .submit{
@@ -150,14 +158,81 @@
     border-radius: 50px;
     border: none;
     background: linear-gradient(var(--button-gradient));
+    box-shadow: 8px 8px 20px -8px var(--Desaturated-Red);
 }
 
 
-.attribution {
-    font-size: 11px;
-    text-align: center;
-}
+.attribution {   
+    font-family: 'Manrope';  
+    font-size: 12px;   
+    font-weight: 400;  
+    line-height: 150%;  
+    text-align: center;   
+    background-color: hsl(0, 100%, 98%);   
+    padding: 1rem 0;   
+    position: relative;   
+}  
 
-.attribution a {
-    color: hsl(228, 45%, 44%);
+.attribution a {   
+    text-decoration: none;  
+    font-weight: 900;  
+    color: var(--Desaturated-Red);  
+}  
+
+::-webkit-scrollbar {  
+    display: none;  
+}  
+
+
+@media screen and (max-width: 576px) {  
+    .card{
+        flex-direction: column-reverse;
+
+    }
+    .card__content{
+        padding: 70px 30px 20px 30px;
+        align-items: center;
+    }
+    .content{
+        align-items: center;
+    }
+    .text{
+        align-items: center;
+    }
+    .title{
+        font: normal normal 500 36px/110% 'Josefin Sans';
+        letter-spacing: 10px;
+        text-align: center;
+    }
+    .title span{
+        font: normal normal 300 36px/110% 'Josefin Sans';
+        letter-spacing: 10px;
+    }
+    .paragraph{
+        text-align: center;
+        font-size: 14px;
+    }
+    .logo__container{
+        display: none;
+    }
+    .navbar__mobile{
+        display: flex;
+        padding: 20px;
+    }
+    .logo{
+        width: 100px;
+    }
+    .article__image__desktop{
+        display: none;
+    }
+    .article__image__mobile{
+        display: flex;
+        width: 100%;
+    }
+    .email__input{
+        height: 44px;
+    }
+    .submit{
+        width: 60px;
+    }
 }
