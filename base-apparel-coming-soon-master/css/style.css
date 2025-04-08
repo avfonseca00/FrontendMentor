@@ -1,0 +1,163 @@
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('../fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf');
+}
+
+:root{
+
+    /*--------------
+         COLORS 
+    ----------------*/
+
+    /* Primary */
+    --Desaturated-Red: hsl(0, 36%, 70%);
+    --Soft-Red: hsl(0, 93%, 68%);
+
+    /* Neutral*/
+    --Dark-Grayish-Red: hsl(0, 6%, 24%);
+    --White: hsl(0, 0%, 100%);
+
+    /* Gradients */
+    --bg-gradient:  135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%);
+    --button-gradient: 135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%);
+
+    /*--------------
+         FONTS 
+    ----------------*/
+
+    --text-light-64: normal normal 300 64px/110% 'Josefin Sans';
+    --text-regular-64: normal normal 400 64px/110% 'Josefin Sans';
+    --text-regular-16: normal normal 400 16px/175% 'Josefin Sans';
+
+    /*--------------
+         SPACING 
+    ----------------*/
+    --size-128: 128px;
+    --size-16: 16px;
+    --size-12: 12px;
+
+    /*--------------
+         RADIUS 
+    ----------------*/
+    --border-10: 10px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    width: 100%;
+    height: 800px;
+    font: var(--text-medium-13);
+    letter-spacing: 0.1px;
+    overflow: hidden;
+}
+.card{
+    display: flex;
+    width: 100%;
+    background-color: var(--White);
+}
+.img__container{
+    width: auto;
+    display: flex;
+    overflow: hidden;
+}
+.article__image{
+    width: 100%;
+}
+.card__content{
+    position: relative;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    width: 100%;
+    row-gap: var(--size-128);
+    padding: 64px 0 0 164px;
+    background: linear-gradient(var(--bg-gradient));
+    z-index: 1;
+}
+.bg__pattern{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.logo__container{
+    width: fit-content;
+}
+.logo{
+    display: block;
+    width: auto;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    width: fit-content;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    row-gap: 18px;
+    width: fit-content;
+}
+.title{
+    font: var(--text-regular-64);
+    text-transform: uppercase;
+    letter-spacing: 17px;
+    max-width: 365px;
+    color: var(--Dark-Grayish-Red);
+}
+.title span{
+    font: var(--text-light-64);
+    text-transform: uppercase;
+    letter-spacing: 17px;
+    color: var(--Desaturated-Red);
+}
+.paragraph{
+    font: var(--text-regular-16);
+    color: var(--Desaturated-Red);
+    max-width: 450px;
+}
+.email__input{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid var(--Desaturated-Red);
+    border-radius: 50px;
+    padding-left: 32px;
+    max-width: 443px;
+}
+.input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font: var(--text-regular-16);
+    height: 54px;
+    line-height: 54px;
+}
+.submit{
+    width: 100px;
+    height: 100%;
+    border-radius: 50px;
+    border: none;
+    background: linear-gradient(var(--button-gradient));
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
