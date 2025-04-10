@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'Figtree';
+    src: url('../fonts/Figtree-VariableFont_wght.ttf');
+}
+
+:root{
+    --white: hsl(0, 0%, 100%);
+    --yellow: hsl(47, 88%, 63%);
+    --gray-500: hsl(0, 0%, 42%);
+    --gray-950: hsl(0, 0%, 7%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.wrapper{
+    background-color: var(--yellow);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    font-family: 'Figtree';
+}
+.article{
+    background-color:var(--white);
+    margin: 8rem 0;
+    width: 384px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 24px;
+    padding: 1.5rem;
+    border-radius: 20px;
+    color: var(--gray-700);
+    font-size: 14px;
+    border: 1px solid var(--gray-950);
+    box-shadow: 8px 8px 0 0 var(--gray-950);
+}
+.blog__image{
+    width: 100%;
+    border-radius: 10px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+.tag__container{
+    width: fit-content;
+    padding: 4px 12px;
+    border-radius: 4px;
+    background-color: var(--yellow);
+}
+.tag{
+    font-weight: 900;
+    line-height: 150%;
+}
+.published{
+    font-weight: 500;
+    line-height: 150%;
+    color: var(--gray-950);
+}
+.title{
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 150%;
+    color: var(--gray-950);
+}
+.title:hover{
+    color: var(--yellow);
+    cursor: pointer;
+}
+.paragraph{
+    color: var(--gray-500);
+    font-size: 16px;
+    line-height: 150%;
+}
+.author{
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+.avatar{
+    width: 32px;
+    border-radius: 50%;
+}
+.name{
+    color: var(--gray-950);
+    font-weight: 900;
+    line-height: 150%;
+}
+.attribution { 
+    font-family: 'Figtree';
+    font-size: 12px; 
+    font-weight: 500;
+    line-height: 150%;
+    text-align: center; 
+    background-color: hsl(47, 88%, 63%); 
+    padding: 1rem 0; 
+}
+.attribution a { 
+    text-decoration: none;
+    font-weight: 900;
+    color: var(--gray-950);
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+
+@media screen and (max-width: 376px){
+    .article{
+        width: 327px;
+        font-size: 12px;
+    }
+    .title{
+        font-size: 20px;
+    }
+    .paragraph{
+        font-size: 14px;
+    }
+    .name{
+        font-size: 14px;
+    }
+}
