@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../fonts/WorkSans-VariableFont_wght.ttf');
+}
+
+:root{
+    --white: hsl(0, 0%, 100%);
+    --light-pink: hsl(276, 100%, 97%);
+    --grayish-purple: hsl(292, 16%, 49%);
+    --dark-purple: hsl(292, 42%, 14%);
+    --purple: #AD28EB;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.wrapper{
+    background-color: var(--light-pink);
+    width: 100vw;
+    height: calc(100vh + 200px);
+    position: relative;
+    font-family: 'Work Sans';
+}
+.background__pattern{
+    width: 100%;
+}
+.card{
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    background-color: var(--white);
+    margin: 8rem 0;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2.5rem;
+    border-radius: 24px;
+    color: var(--gray-700);
+    font-size: 16px;
+    transform: translateX(-50%);
+    box-shadow: 0 0 50px -8px hsla(293, 16%, 49%, 0.255);
+    z-index: 99;
+}
+.card__title{
+    display: flex;
+}
+.title{
+    font-size: 3.5rem;
+    margin-left: 1rem;
+    color: var(--dark-purple);
+}
+.accordion{
+    width: 100%;
+}
+.accordion__item{
+    cursor: pointer;
+}
+.accordion__item:not(:last-child){
+    border-bottom: 1px solid var(--light-pink);
+}
+.accordion__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+.faq{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--dark-purple);
+}
+.faq:hover{
+    color: var(--purple);
+    cursor: pointer;
+}
+.faq__answer{
+    line-height: 1.6rem;
+    margin-bottom: 1rem;
+    color: var(--grayish-purple);
+    display: none;
+}
