@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'Overpass';
+    src: url('../fonts/Overpass-VariableFont_wght.ttf');
+}
+
+:root{
+    
+    /* Primary Color */
+    --orange: hsl(25, 97%, 53%);
+
+    /* Neutral Colors */
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --dark-blue: hsl(215, 21%, 16%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+
+    --dark-grey: hsl(210, 19%, 18%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.wrapper{
+    background-color: var(--very-dark-blue);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    font-family: 'Overpass';
+}
+.card{
+    background-color: var(--dark-blue);
+    margin: 8rem 0;
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.25rem;
+    border-radius: 28px;
+    color: var(--white);
+    font-size: 15px;
+}
+.icon__container{
+    width: fit-content;
+    padding: 1rem;
+    background-color: var(--dark-grey);
+    border-radius: 50%;
+}
+.icon{
+    display: block;
+    width: 1rem;
+    aspect-ratio: 1/1;
+}
+.card__title{
+    margin-top: 2rem;
+    font-size: 1.85rem;
+    font-weight: 700;
+}
+.description{
+    margin-top: 0.6rem;
+    line-height: 1.6rem;
+    color: var(--light-grey);
+}
+.rating{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.rating .rating__item{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-grey);
+    border-radius: 50%;
+}
+.rating .rating__item:hover{
+    background-color: var(--orange);
+    color: var(--dark-blue);
+}
+a.button{
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: var(--orange);
+    color: var(--dark-blue);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem 0;
+    margin-top: 1.8rem;
+    line-height: normal;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.1rem;
+    border-radius: 50px;
+}
+a.button:hover{
+    background-color: var(--white);
+    color: var(--dark-blue);
+}
+.selected{
+    background-color: var(--white)!important;
+    color: var(--dark-blue);
+}
