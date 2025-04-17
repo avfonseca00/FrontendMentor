@@ -33,7 +33,7 @@
 .card{
     background-color: var(--dark-blue);
     margin: 8rem 0;
-    width: 28%;
+    width: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -67,7 +67,7 @@
     margin-top: 1rem;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .rating .rating__item{
     width: 50px;
@@ -76,6 +76,7 @@
     align-items: center;
     justify-content: center;
     background-color: var(--dark-grey);
+    color: var(--light-grey);
     border-radius: 50%;
 }
 .rating .rating__item:hover{
@@ -128,3 +129,45 @@ a.button:hover{
 ::-webkit-scrollbar {  
     display: none;  
 }  
+
+
+@media screen and (max-width: 460px) { 
+    .wrapper{
+        padding-inline: 24px;
+    }
+    .card{
+        padding: 1.3rem;
+        border-radius: 0.8rem;
+        -webkit-border-radius: 0.8rem;
+        -moz-border-radius: 0.8rem;
+        -ms-border-radius: 0.8rem;
+        -o-border-radius: 0.8rem;
+}
+    .icon__container{
+        padding: 0.8rem;
+    }
+    .icon{
+        width: 0.8rem;
+    }
+    .card__title{
+        margin-top: 1.45rem;
+        font-size: 1.35rem;
+    }
+    .description{
+        margin-top: 0.75rem;
+        font-size: 0.875rem;
+        line-height: 160%;
+    }
+    .rating{
+        margin-top: 1.5rem;
+    }
+    .rating .rating__item{
+        width: 42px;
+        height: 42px;
+        font-size: 0.85rem;
+    }
+    a.button{
+        font-size: 14px;
+        margin-bottom: 0.5rem;
+    }
+}
