@@ -112,6 +112,6 @@ shareButton.addEventListener('click', function() {
 
 ## Author
 
-- Website - [GitHub profile](https://www.your-site.com)
+- Website - [GitHub profile](https://github.com/avfonseca00)
 - Frontend Mentor - [@avfonseca00](https://www.frontendmentor.io/profile/avfonseca00)
 - Email - [Gmail](mailto:avfonseca00@gmail.com)
