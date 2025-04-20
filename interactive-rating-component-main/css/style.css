@@ -26,13 +26,14 @@
 .wrapper{
     background-color: var(--very-dark-blue);
     width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
     font-family: 'Overpass';
 }
 .card{
     background-color: var(--dark-blue);
-    margin: 8rem 0;
     width: 400px;
     display: flex;
     flex-direction: column;
@@ -114,6 +115,21 @@ a.button:hover{
 .selected{
     background-color: var(--white)!important;
     color: var(--dark-blue);
+}
+#thanku__container {
+    flex-direction: column;
+    align-items: center;
+}
+#thanku__container .description{
+    text-align: center;
+}
+#thanku__container .badge{
+    background-color: var(--dark-grey);
+    color: var(--orange);
+    font-size: 0.8rem;
+    padding: 6px 16px;
+    margin-top: 2rem;
+    border-radius: 20px;
 }
 .attribution {   
     font-family: 'Figtree';  
