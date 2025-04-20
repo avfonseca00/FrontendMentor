@@ -10,9 +10,7 @@ This is a solution to the [Base Apparel coming soon page challenge on Frontend M
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -43,13 +41,8 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me 
-
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [GitHub profile](https://github.com/avfonseca00)
+- Frontend Mentor - [@avfonseca00](https://www.frontendmentor.io/profile/avfonseca00)
+- Email - [Gmail](mailto:avfonseca00@gmail.com)
