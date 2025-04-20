@@ -83,6 +83,13 @@
     background-color: var(--orange);
     color: var(--dark-blue);
 }
+input[type="radio"] {  
+    display: none;
+} 
+input[type="radio"]:checked + label {  /* Use the + combinator to select the label tag after checked radio*/  
+    background-color:var(--white);
+    color: var(--dark-blue);
+}
 a.button{
     text-decoration: none;
     text-transform: uppercase;

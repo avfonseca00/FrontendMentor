@@ -21,13 +21,18 @@
         <p class="description">Please let us know how we did with your support request. All feedback is appreciated 
           to help us improve our offering!</p>
         <div class="rating">
-          <div class="rating__item"><p>1</p></div>
-          <div class="rating__item"><p>2</p></div>
-          <div class="rating__item"><p>3</p></div>
-          <div class="rating__item selected"><p>4</p></div>
-          <div class="rating__item"><p>5</p></div>
+          <input type="radio" id="star1" name="rating" value="1">  
+          <label for="star1" class="rating__item">1</label>  
+          <input type="radio" id="star2" name="rating" value="2">  
+          <label for="star2" class="rating__item">2</label>  
+          <input type="radio" id="star3" name="rating" value="3">  
+          <label for="star3" class="rating__item">3</label>  
+          <input type="radio" id="star4" name="rating" value="4">  
+          <label for="star4" class="rating__item">4</label>  
+          <input type="radio" id="star5" name="rating" value="5">  
+          <label for="star5" class="rating__item">5</label> 
         </div>
-        <a href="#" class="button">Submit</a>
+        <a href="#" class="button" id="submitRating">Submit</a>
       </div>
       <!-- Rating state end -->
 
@@ -50,5 +55,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/avfonseca00/" target="_blank">VillaDev</a>.
   </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>
