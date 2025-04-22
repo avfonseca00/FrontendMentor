@@ -11,9 +11,115 @@
     src: url('../fonts/Poppins-SemiBold.ttf');
 }
 
+:root{
+/* Primary */
+
+--Red: hsl(0, 78%, 62%);
+--Cyan: hsl(180, 62%, 55%);
+--Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%);
+
+/* Neutral */
+
+--Very-Dark-Blue: hsl(234, 12%, 34%);
+--Grayish-Blue: hsl(229, 6%, 66%);
+--Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins 400";
+    font-size: 15px;
 }
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 85px 30px;
+    background-color: var(--Very-Light-Gray);
+}
+h1, span{
+    font-family: "Poppins 200";
+    font-size: 1.5rem;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 160%;
+    color: var(--Very-Dark-Blue);
+}
+h1>span{
+    font-family: "Poppins 600";
+}
+p.subtitle{
+    margin-top: 1.1rem;
+    line-height: 160%;
+    text-align: center;
+    color: var(--Grayish-Blue);
+}
+.cards__container{
+    margin-top: 76px;
+    display: grid;
+    gap: 28px;
+}
+.card{
+    padding: 28px;
+    background-color: white;
+    box-shadow: 0 8px 24px -12px var(--Grayish-Blue);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.card.border-cyan{
+    border-top: 4px solid var(--Cyan);
+}
+.card.border-red{
+    border-top: 4px solid var(--Red);
+}
+.card.border-orange{
+    border-top: 4px solid var(--Orange);
+}
+.card.border-blue{
+    border-top: 4px solid var(--Blue);
+}
+.card__title{
+    font-family: "Poppins 600";
+    font-size: 1.3rem;
+}
+.card__description{
+    font-size: 13px;
+    line-height: 160%;
+    color: var(--Grayish-Blue);
+    margin-top: 4px;
+}
+.card__icon{
+    width: 58px;
+    margin-top: 2rem;
+    float: right;
+}
+
+.attribution {   
+    font-family: 'Figtree';  
+    font-size: 12px;   
+    font-weight: 500;  
+    line-height: 150%;  
+    text-align: center;   
+    font-family: "Poppins 400"; 
+    background-color: var(--Very-Light-Gray);   
+    color: var(--Very-Dark-Blue); 
+    padding: 1rem 0;   
+    position: relative;   
+}  
+
+.attribution a {   
+    text-decoration: none;  
+    font-family: "Poppins 600"; 
+    font-size: 12px; 
+    color: var(--Very-Dark-Blue); 
+}  
+
+::-webkit-scrollbar {  
+    display: none;  
+}  
