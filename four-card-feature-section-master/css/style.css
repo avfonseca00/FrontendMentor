@@ -52,12 +52,14 @@ h1>span{
     font-family: "Poppins 600";
 }
 p.subtitle{
+    max-width: 500px;
     margin-top: 1.1rem;
     line-height: 160%;
     text-align: center;
     color: var(--Grayish-Blue);
 }
 .cards__container{
+    max-width: 1000px;
     margin-top: 76px;
     display: grid;
     gap: 28px;
@@ -91,6 +93,7 @@ p.subtitle{
 .card__description{
     font-size: 13px;
     line-height: 160%;
+    text-align: left;
     color: var(--Grayish-Blue);
     margin-top: 4px;
 }
@@ -123,3 +126,51 @@ p.subtitle{
 ::-webkit-scrollbar {  
     display: none;  
 }  
+
+@media screen and (min-width: 680px) {  
+    .cards__container{
+        grid-template:
+        "a b d" 1fr
+        "a c d" 1fr / 1fr 1fr 1fr;
+        align-items: center;
+    }
+    .card{
+        display: inherit;
+        justify-items: center;
+    }
+    .card.border-cyan{
+    grid-area: a;
+    }
+    .card.border-red{
+        grid-area: b;
+    }
+    .card.border-orange{
+        grid-area: c;
+    }
+    .card.border-blue{
+        grid-area: d;
+    }
+    .card__description{
+        line-height: 170%;
+        margin-top: 8px;
+        text-align: center;
+    }
+    .card__icon{
+        width: 64px;
+        float: none;
+        margin-top: 2.75rem;
+    }
+}
+
+@media screen and (min-width: 970px) { 
+    .card{
+        display: block;
+        justify-items: start;
+    }
+    .card__icon{
+        float: right;
+    }
+    .card__description{
+        text-align: left;
+    }
+}
