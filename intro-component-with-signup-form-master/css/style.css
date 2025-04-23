@@ -1,0 +1,194 @@
+@font-face {
+    font-family: 'Poppins Regular';
+    src: url('../fonts/Poppins/Poppins-Regular.ttf');
+}
+@font-face {
+    font-family: 'Poppins Medium';
+    src: url('../fonts/Poppins/Poppins-Medium.ttf');
+}
+@font-face {
+    font-family: 'Poppins SemiBold';
+    src: url('../fonts/Poppins/Poppins-SemiBold.ttf');
+}
+@font-face {
+    font-family: 'Poppins Bold';
+    src: url('../fonts/Poppins/Poppins-Bold.ttf');
+}
+
+:root{
+
+    /*--------------
+        COLORS 
+    ----------------*/
+
+    /* Primary */
+    --Red: hsl(0, 100%, 74%); 
+    --Green: hsl(154, 59%, 51%);
+
+    /* Accent */
+    --Blue: hsl(248, 32%, 49%);
+
+    /* Neutral*/
+    --Dark-Blue: hsl(249, 10%, 26%) ;
+    --Grayish-Blue: hsl(246, 25%, 77%);
+    --White: hsl(0, 0%, 100%);
+
+    /*--------------
+        FONTS 
+    ----------------*/
+    --text-bold-28: normal normal 700 28px / 135% 'Poppins Bold';
+    --text-regular-16: normal normal 400 16px/160% 'Poppins Regular';
+    --text-medium-16: normal normal 500 16px/160% 'Poppins Medium';
+    --text-medium-14: normal normal 500 14px/160% 'Poppins Medium';
+    --text-semibold-14: normal normal 600 14px/160% 'Poppins SemiBold';
+    --text-medium-12: normal normal 500 12px/160% 'Poppins Medium';
+    --text-medium-10: normal normal 500 10px/210% 'Poppins Medium';
+    --text-bold-10: normal normal 700 10px/160% 'Poppins Bold';
+
+    --text-bold-50: normal normal 700 50px/110% 'Poppins Bold';
+    --text-semibold-16: normal normal 600 16px/160% 'Poppins SemiBold';
+
+    /*--------------
+        SPACING 
+    ----------------*/
+    --size-128: 128px;
+    --size-16: 16px;
+    --size-12: 12px;
+
+    /*--------------
+        RADIUS 
+    ----------------*/
+    --border-10: 10px;
+    --border-6: 6px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--Red);
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 65px;
+    padding: 24px;
+    padding-top: 90px;
+    width: 100vw;
+    background: url("../images/bg-intro-desktop.png") no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 100%;
+    color: white;
+}
+.title{
+    font: var(--text-bold-28);
+    text-align: center;
+}
+.paragraph{
+    font: var(--text-regular-16);
+    text-align: center;
+    opacity: 0.75;
+}
+.form__container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+.toast{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 50px;
+    font: var(--text-medium-16);
+    text-align: center; 
+    background-color: var(--Blue);
+    color: var(--Grayish-Blue);
+    /* border: 1px solid var(--Dark-Blue); */
+    border-radius: var(--border-10);
+    box-shadow: 0 8px 0 0 #5151514c;
+}
+.trial > span{
+    color: var(--White);
+    font: var(--text-semibold-16);
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    width: 100%;
+    padding: 24px;
+    background-color: var(--White);
+    border-radius: var(--border-10);
+    box-shadow: 0 8px 0 0 #5151514c;
+}
+.input{
+    height: 56px;
+    padding: 0 18px;
+    font: var(--text-semibold-14);
+    border-radius: var(--border-6);
+    border: 1px solid #DFDFDF;
+}
+.submit__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 8px;
+}
+.submit{
+    width: 100%;
+    height: 56px;
+    background-color: var(--Green);
+    border: none;
+    border-bottom: 4px solid #3EB37F;
+    border-radius: var(--border-6);
+    font: var(--text-medium-14);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: hsla(0, 0%, 100%, 0.9);
+    -webkit-border-radius: var(--border-6);
+    -moz-border-radius: var(--border-6);
+    -ms-border-radius: var(--border-6);
+    -o-border-radius: var(--border-6);
+}
+.terms{
+    font: var(--text-medium-10);
+    text-align: center;
+    max-width: 220px;
+    color: var(--Grayish-Blue);
+}
+.terms>span{
+    color: var(--Red);
+    font: var(--text-bold-10);
+}
+
+.attribution {   
+    font-family: 'Poppins Regular';  
+    font-size: 12px;   
+    font-weight: 500;  
+    line-height: 150%;  
+    text-align: center;   
+    color: white;
+    background-color: var(--Red);   
+    padding: 1rem 0;   
+    position: relative;   
+}  
+
+.attribution a {   
+    text-decoration: none;  
+    font-weight: 900;  
+    color: white;  
+}  
+
+::-webkit-scrollbar {  
+    display: none;  
+} 
