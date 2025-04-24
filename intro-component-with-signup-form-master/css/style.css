@@ -43,6 +43,7 @@
     --text-semibold-14: normal normal 600 14px/160% 'Poppins SemiBold';
     --text-regular-12: normal normal 400 12px/150% 'Poppins Regular';
     --text-medium-10: normal normal 500 10px/210% 'Poppins Medium';
+    --text-semibold-10: normal normal 600 11px/160% 'Poppins SemiBold';
     --text-bold-10: normal normal 700 10px/160% 'Poppins Bold';
 
     --text-bold-50: normal normal 700 50px/110% 'Poppins Bold';
@@ -142,7 +143,7 @@ body{
     border: 1px solid #DFDFDF;
 }
 input.error {  
-    border: 1px solid var(--Red);  
+    border: 2px solid var(--Red);  
 } 
 .error-icon {  
     position: absolute;  
@@ -152,8 +153,10 @@ input.error {
     display: none; 
 }
 .error-message {  
+    margin-top: 6px;
     color: var(--Red);  
-    font-size: 0.9rem;  
+    font: var(--text-semibold-10);
+    font-style: italic;
 	text-align: right;
     display: none; 
 }  
