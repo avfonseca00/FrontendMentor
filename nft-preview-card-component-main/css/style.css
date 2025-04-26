@@ -1,0 +1,180 @@
+@font-face {
+    font-family: 'Outfit';
+    src: url('../fonts/outfit/Outfit-VariableFont_wght.ttf');
+}
+
+:root{
+
+    /*--------------
+        COLORS 
+    ----------------*/
+
+    /* Primary */
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+
+    /* Neutral*/
+    --very-dark-blue-bg: hsl(217, 54%, 11%);
+    --very-dark-blue-card: hsl(216, 50%, 16%);
+    --very-dark-blue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+
+    /*--------------
+        FONTS 
+    ----------------*/
+
+    --text-light-14: normal normal 300 14px/150% 'Outfit';
+    --text-bold-14: normal normal 600 14px/150% 'Outfit';
+    --text-light-16: normal normal 300 16px/160% 'Outfit';
+    --text-bold-16: normal normal 600 16px/150% 'Outfit';
+    --text-light-18: normal normal 300 18px/150% 'Outfit';
+    --text-bold-22: normal normal 600 22px/150% 'Outfit';
+
+    /*--------------
+        SPACING 
+    ----------------*/
+    --size-20: 20px;
+    --size-16: 16px;
+    --size-14: 14px;
+    --size-6: 6px;
+
+    /*--------------
+        RADIUS 
+    ----------------*/
+    --border-20: 20px;
+    --border-10: 10px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    width: 100vw;
+    background-color: var(--very-dark-blue-bg);
+    color: var(--soft-blue);
+    font: var(--text-light-16);
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--size-20);
+    width: 350px;
+    margin: 8rem 0;
+    padding: 24px;
+    background-color: var(--very-dark-blue-card);
+    border-radius: var(--border-20);
+}
+.nft__image{
+    width: 100%;
+    border-radius: var(--border-10);
+}
+.card__content{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    width: 100%;
+}
+.card__header{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+.card__title{
+    color: var(--white);
+    font: var(--text-bold-22);
+}
+.card__description{
+    font: var(--text-light-16);
+}
+.nft__value__container{
+    display: flex;
+    justify-content: space-between;
+}
+.nft__value{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    color: var(--cyan);
+    font: var(--text-bold-16);
+}
+.time__container{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.icon{
+    width: 16px;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+.time{
+    font: var(--text-regular-16);
+}
+.separator{
+    height: 1px;
+    background-color: var(--very-dark-blue-line);
+}
+.author{
+    display: flex;
+    align-items: center;
+    column-gap: var(--size-16);
+}
+.avatar{
+    width: 32px;
+    box-sizing: content-box;
+    border: 2px solid rgba(255, 255, 255, 0.749);
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+.name{
+    font: normal normal 300 15px/150% 'Outfit';
+}
+.name > span{
+    color: var(--white);
+}
+
+.attribution {   
+    font: var(--text-light-14);
+    text-align: center;   
+    color: white;
+    background-color: var(--very-dark-blue-bg);   
+    padding: 1rem 0;   
+    position: relative;   
+}  
+
+.attribution a {   
+    text-decoration: none;  
+    font: var(--text-bold-14);
+    color: white;  
+}  
+
+::-webkit-scrollbar {  
+    display: none;  
+} 
+
+@media screen and (min-width: 680px) {  
+    .card__content{
+        gap: 14px;
+    }
+    .card__description{
+        font: var(--text-light-18);
+    }
+    .nft__value{
+        gap: 6px;
+        font: var(--text-bold-16);
+    }
+    .time__container{
+        gap: 6px;
+    }
+}
