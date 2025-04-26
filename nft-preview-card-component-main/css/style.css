@@ -165,6 +165,9 @@
 
 @media screen and (min-width: 680px) {  
     .card__content{
+        gap: 20px;
+    }
+    .card__header{
         gap: 14px;
     }
     .card__description{
@@ -176,5 +179,8 @@
     }
     .time__container{
         gap: 6px;
+    }
+    .name{
+        font: var(--text-light-16);
     }
 }
