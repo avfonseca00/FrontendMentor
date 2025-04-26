@@ -71,9 +71,32 @@
     background-color: var(--very-dark-blue-card);
     border-radius: var(--border-20);
 }
+.image__container{
+    display: flex;
+    position: relative;
+    border-radius: var(--border-10);
+}
 .nft__image{
     width: 100%;
-    border-radius: var(--border-10);
+}
+.view__overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(178, 100%, 50%, 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    -webkit-transition: opacity 0.2s ease;
+    -moz-transition: opacity 0.2s ease;
+    -ms-transition: opacity 0.2s ease;
+    -o-transition: opacity 0.2s ease;
+}
+.view__overlay:hover{
+    opacity: 1;
 }
 .card__content{
     display: flex;
@@ -89,7 +112,16 @@
 }
 .card__title{
     color: var(--white);
+    cursor: pointer;
     font: var(--text-bold-22);
+    transition: color 0.2s ease;
+    -webkit-transition: color 0.2s ease;
+    -moz-transition: color 0.2s ease;
+    -ms-transition: color 0.2s ease;
+    -o-transition: color 0.2s ease;
+}
+.card__title:hover{
+    color: var(--cyan);
 }
 .card__description{
     font: var(--text-light-16);
@@ -141,7 +173,16 @@
     font: normal normal 300 15px/150% 'Outfit';
 }
 .name > span{
+    cursor: pointer;
     color: var(--white);
+    transition: color 0.2s ease;
+    -webkit-transition: color 0.2s ease;
+    -moz-transition: color 0.2s ease;
+    -ms-transition: color 0.2s ease;
+    -o-transition: color 0.2s ease;
+}
+.name > span:hover{
+    color: var(--cyan);
 }
 
 .attribution {   
