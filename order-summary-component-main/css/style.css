@@ -27,8 +27,8 @@
     ----------------*/
     --text-black-22: normal normal 900 22px 'Red Hat Display';
     --text-black-28: normal normal 900 28px 'Red Hat Display';
-    --text-medium-16: normal normal 500 16px/160% 'Red Hat Display';
-    --text-black-16: normal normal 900 16px/160% 'Red Hat Display';
+    --text-medium-16: normal normal 500 16px/165% 'Red Hat Display';
+    --text-black-17: normal normal 900 17px/140% 'Red Hat Display';
     --text-bold-14: normal normal 700 14px/160% 'Red Hat Display';
     --text-medium-15: normal normal 500 15px / 170% 'Red Hat Display';
     --text-bold-15: normal normal 700 15px/150% 'Red Hat Display';
@@ -127,6 +127,11 @@
     align-items: center;
     column-gap: var(--size-20);
 }
+.plan__text{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
 .plan__duration{
     font: normal normal 900 14px/160% 'Red Hat Display';
     color: var(--dark-blue);
@@ -190,4 +195,57 @@ a.button.primary:hover{
     background-color: var(--violet-blue);
     color: var(--very-pale-blue);
     box-shadow: 0 8px 24px -6px var(--violet-blue);
+}
+
+@media screen and (min-width: 680px) {  
+    .wrapper{
+        padding: 100px 24px;
+    }
+    .bg__pattern__desktop{
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+    .bg__pattern__mobile{
+        display: none;
+    }
+    .card__content{
+        padding: 45px 48px 32px 48px;
+        gap: 32px;
+    }
+    .card__title{
+        text-align: center;
+        color: var(--dark-blue);
+        font: var(--text-black-28);
+    }
+    .card__description{
+        max-width: 350px;
+        font: var(--text-medium-16);
+    }
+    .text__content{
+        gap: 18px;
+    }
+    .plan__container{
+        padding: 24px;
+    }
+    .change__plan__link{
+        font: var(--text-bold-14);
+        color: var(--bright-blue);
+    }
+    .plan__text{
+        gap: 2px;
+    }
+    .plan__duration{
+        font: var(--text-black-17);
+        letter-spacing: -0.5px;
+    }
+    .plan__price{
+        font: normal normal 600 16px/160% 'Red Hat Display';
+        letter-spacing: 0.3px;
+    }
+    .buttons__container{
+        gap: 18px;
+    }
 }
