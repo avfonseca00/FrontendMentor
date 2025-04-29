@@ -135,3 +135,42 @@
 ::-webkit-scrollbar{
     display: none;
 }
+
+@media screen and (min-width: 680px) {  
+    .card{
+        flex-direction: row;
+        max-width: 600px;
+        margin: 120px 0;
+    }
+    .card__content{
+        width: 50%;
+        padding: 32px;
+    }
+    .card__image__mobile{
+        display: none;
+    }
+    .card__image__desktop{
+        display: block;
+        width: 50%;
+    }
+    .category{
+        font-size: 12px;
+    }
+    .title{
+        margin-top: 1.3rem;
+        font-size: 32px;
+        font-weight: 700;
+    }
+    .description{
+        margin-top: 24px;
+        line-height: 165%;
+        color: var(--dark-grayish-blue);
+    }
+    .pricing{
+        margin-top: 24px;
+    }
+    .button{
+        margin-top: 26px;
+        font-size: 14px;
+    }
+}
