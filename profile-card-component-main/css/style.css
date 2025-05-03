@@ -146,10 +146,10 @@
 .attribution { 
     font-size: 12px; 
     text-align: center; 
-    color: var(--dark-grayish-blue);
-    background-color: var(--cream);
+    color: var(--white);
+    background-color: var(--dark-cyan);
     padding: 1rem; 
-    font-family: 'Montserrat';
+    font-family: 'Kumbh Sans';
 }
 .attribution a { 
     text-decoration: none;
@@ -159,4 +159,16 @@
 
 ::-webkit-scrollbar{
     display: none;
+}
+
+@media screen and (min-width: 680px) { 
+    .wrapper{
+        padding-inline: 0;
+    }
+    .profile__content{
+        padding: 18px;
+    }
+    .stats__container{
+        padding: 25px;
+    }
 }
