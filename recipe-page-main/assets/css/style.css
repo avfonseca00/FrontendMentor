@@ -49,7 +49,6 @@ p, li{
     display: flex;
     flex-direction: column;
     padding: 42px 32px;
-    overflow-x: visible;
 }
 .title, .section__title{
     font-family: 'Young Serif';
@@ -184,4 +183,68 @@ ol > li > span {
 
 ::-webkit-scrollbar{
     display: none;
+}
+
+@media screen and (min-width: 680px) { 
+    .wrapper{
+        background-color: var(--stone-100);
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+    .main__card{
+        margin: 8rem 0;
+        width: min-content;
+        padding: 40px;
+        padding-bottom: 32px;
+        border-radius: 30px;
+    }
+    .content{
+        padding: 30px 0;
+        padding-bottom: 0;
+    }
+    .image{
+        width: 655px;
+        border-radius: 12px;
+    }
+    .title{
+        line-height: 150%;
+        font-size: 40px;
+        letter-spacing: -0.1px;
+    }
+    .description{
+        margin-top: 13px;
+        letter-spacing: 0;
+    }
+    .card{
+        padding: 24px 28px;
+    }
+    ul {
+        list-style: none;
+        padding: 0 0.5rem;
+        margin-top: 10px;
+    }
+    .card > ul {
+        margin-top: 14px;
+    }
+    ul > li {
+        position: relative;
+        padding-left: 32px;
+        margin-block: 8px;
+    }
+    .card > ul > li > span {
+        letter-spacing: 0.1px;
+    }
+    ul > li{
+        line-height: 150%;
+    }
+    ol{
+        list-style: none;
+    }
+    .separator{
+        margin-top: 22px;
+    }
+    .attribution { 
+        background-color: var(--stone-100);
+    }
 }
