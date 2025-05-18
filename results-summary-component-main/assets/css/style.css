@@ -145,9 +145,11 @@
 }
 .category__result{
     color: var(--dark-gray-blue);
+    font-size: 16px;
     font-weight: 500;
 }
 .category__result span{
+    font-size: inherit;
     font-weight: 800;
 }
 .button{
@@ -183,7 +185,12 @@
     font-weight: 700;
     color: var(--very-dark-blue);
 }
-
 ::-webkit-scrollbar{
     display: none;
+}
+
+@media screen and (min-width: 680px) {  
+    .card{
+        box-shadow: 12px 12px 30px 4px var(--pale-blue);
+    }
 }
