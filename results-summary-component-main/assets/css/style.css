@@ -1,0 +1,189 @@
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url('../fonts/HankenGrotesk-VariableFont_wght.ttf');
+}
+
+:root{
+
+    /* Primary Colors */
+    --light-red: hsl(0, 100%, 67%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+
+    --transparent-red: hsla(0, 100%, 67%, 0.05);
+    --transparent-yellow: hsl(39, 100%, 56%, 0.05);
+    --transparent-green: hsl(166, 100%, 37%, 0.05);
+    --transparent-blue: hsl(234, 85%, 45%, 0.05);
+
+    /* Neutral Colors */
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+
+    /* Gradients Colors */
+    --light-slate-blue: hsl(252, 100%, 67%);
+    --light-royal-blue: hsl(241, 81%, 54%);
+    
+    --violet-blue: hsla(256, 72%, 46%, 1);
+    --persian-blue: hsla(241, 72%, 46%, 0);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Hanken Grotesk';
+    font-size: 18px;
+    font-weight: 500;
+}
+.wrapper{
+    background-color: var(--white);
+    width: 100vw;
+    display: flex;
+}
+.card{
+    background-color: var(--white);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: var(--gray-700);
+}
+.left__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(120,87,255,1) 0%, rgba(46,43,233,1) 100%);
+    width: 100%;
+    padding: 24px;
+    padding-bottom: 38px;
+    color:var(--white);
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+}
+.circle__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    margin-top: 24px;
+    aspect-ratio: 1/1;
+    background: linear-gradient(0deg, var(--persian-blue) 0%, var(--violet-blue) 100%);
+    border-radius: 50%;
+}
+.result__value{
+    font-size: 56px;
+    font-weight: 700;
+}
+.max__value{
+    font-size: 0.85rem;
+    color: var(--light-lavender);
+}
+.text__small{
+    margin-top: 8px;
+    text-align: center;
+    font-size: 16px;
+    color: var(--light-lavender);
+}
+.text__medium{
+    font-weight: 700;
+}
+.text__large{
+    margin-top: 24px;
+    font-size: 24px;
+    font-weight: 500;
+}
+.lavender{
+    color: var(--light-lavender);
+}
+.red{
+    color: var(--light-red);
+    background-color: var(--transparent-red);
+}
+.yellow{
+    color: var(--orangey-yellow);
+    background-color: var(--transparent-yellow);
+}
+.green{
+    color: var(--green-teal);
+    background-color: var(--transparent-green);
+}
+.blue{
+    color: var(--cobalt-blue);
+    background-color: var(--transparent-blue);
+}
+
+.right__container{
+    width: 100%;
+    padding: 24px 32px;
+}
+.summary{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 22px;
+}
+.summary__item{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 16px 14px;
+    border-radius: 8px;
+}
+.summary__item__left{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.category{
+    font-size: 16px;
+    width: auto;
+}
+.category__result{
+    color: var(--dark-gray-blue);
+    font-weight: 500;
+}
+.category__result span{
+    font-weight: 800;
+}
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0.8rem 0;
+    margin-top: 24px;
+    background-color: var(--dark-gray-blue);
+    color: var(--white);
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 40px;
+}
+.button:hover{
+    background: linear-gradient(180deg, rgba(120,87,255,1) 0%, rgba(46,43,233,1) 100%);
+}
+
+
+.attribution { 
+    font-size: 14px; 
+    text-align: center; 
+    color: var(--dark-grayish-blue);
+    background-color: var(--cream);
+    padding: 1rem; 
+    font-family: 'Hanken Grotesk';
+}
+.attribution a { 
+    font-size: inherit;
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--very-dark-blue);
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
