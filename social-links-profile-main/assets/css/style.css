@@ -97,3 +97,21 @@ a.button:hover{
 ::-webkit-scrollbar{
     display: none;
 }
+
+@media screen and (min-width: 680px) {
+    .wrapper{
+        display: flex;
+        justify-content: center;
+    }
+    .card{
+        margin: 8rem 0;
+        width: 382px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px;
+    }
+    .avatar{
+        width: 90px;
+    }
+}
