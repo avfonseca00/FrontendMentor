@@ -1,0 +1,195 @@
+@font-face {
+    font-family: 'League Spartan';
+    src: url('../fonts/League_Spartan/LeagueSpartan-VariableFont_wght.ttf');
+}
+
+:root{
+
+    /*--------------
+        COLORS 
+    ----------------*/
+
+    /* Primary */
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+
+    /* Neutral*/
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+
+    /*--------------
+        FONTS 
+    ----------------*/
+    --title-mobile: normal normal 700 38px/85% 'League Spartan';
+    --paragraph-mobile: normal normal 500 19px/133% 'League Spartan';
+    --text-bold-56: normal normal 700 56px/85% 'League Spartan';
+    --text-regular-20: normal normal 400 20px/124% 'League Spartan';
+    --text-medium-16: normal normal 500 16px/136% 'League Spartan';
+    --text-bold-16: normal normal 700 16px 'League Spartan';
+
+    /*--------------
+        SPACING 
+    ----------------*/
+    --size-32: 32px;
+    --size-20: 20px;
+    --size-18: 18px;
+    --size-16: 16px;
+    --size-12: 12px;
+    --size-4: 4px;
+
+    /*--------------
+        RADIUS 
+    ----------------*/
+    --border-20: 20px;
+    --border-10: 10px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    padding: 85px 24px;
+    color: var(--Very-Dark-Magenta);
+    font: var(--text-regular-20);
+    overflow: hidden;
+}
+.bg__pattern__top__mobile{
+    display: none;
+}
+.bg__pattern__bottom__mobile{
+    display: none;
+}
+.bg__pattern__top{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.bg__pattern__bottom{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.content__grid{
+    display: grid;
+    width: 100%;
+    z-index: 99;
+}
+.text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+}
+.title{
+    font: var(--title-mobile);
+    letter-spacing: -1px;
+    text-align: center;
+    max-width: 250px;
+}
+.paragraph{
+    font: var(--paragraph-mobile);
+    color: var(--Dark-Grayish-Magenta);
+    text-align: center;
+    letter-spacing: -0.7px;
+}
+.ratings{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    margin-top: 38px;
+    border-radius: 8px;
+}
+.rating__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+    gap: 16px;
+    padding: 16px;
+    background-color: var(--Light-Grayish-Magenta);
+    border-radius: 8px;
+    font: var(--text-bold-16);
+}
+.rating__bar{
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    margin: 0 32px;
+}
+.rating__text{
+    text-align: center;
+}
+.testimonials{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 50px;
+}
+.card{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    row-gap: 26px;
+    padding: 40px 32px;
+    background-color: var(--Very-Dark-Magenta);
+    color: var(--White);
+    border-radius: 8px;
+}
+.author{
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+}
+.avatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.name{
+    font: var(--text-bold-16);
+    letter-spacing: 0.5px;
+}
+.category{
+    font: var(--text-medium-16);
+    letter-spacing: 0.4px;
+    color: var(--Soft-Pink);
+}
+.testimonial{
+    font: var(--text-medium-16);
+    letter-spacing: 0.8%;
+    color: var(--Light-Grayish-Magenta);
+}
+
+.attribution { 
+    font-size: 12px; 
+    text-align: center; 
+    color: var(--white);
+    background-color: var(--grey-900);
+    padding: 1rem; 
+    font-family: 'League Spartan';
+}
+.attribution a { 
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--green);
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
