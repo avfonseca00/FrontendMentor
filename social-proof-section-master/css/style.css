@@ -179,17 +179,99 @@
 .attribution { 
     font-size: 12px; 
     text-align: center; 
-    color: var(--white);
-    background-color: var(--grey-900);
+    color: var(--Very-Dark-Magenta);
     padding: 1rem; 
     font-family: 'League Spartan';
 }
 .attribution a { 
     text-decoration: none;
     font-weight: 600;
-    color: var(--green);
+    color: var(--Very-Dark-Magenta);
 }
 
 ::-webkit-scrollbar{
     display: none;
+}
+
+
+@media screen and (min-width: 680px) {
+    .wrapper{
+        padding-block: 118px;
+    }
+    .content__grid{
+        gap: 70px 30px;
+        grid-template: repeat(2, auto) / repeat(2, 1fr);
+        grid-template-areas: 
+            "text rating"
+            "testimonial testimonial"
+        ;
+        max-width: 1110px;
+    }
+    .text{
+        grid-area: text;
+        align-items: flex-start;
+        gap: 27px;
+    }
+    .title{
+        font: var(--text-bold-56);
+        text-align: left;
+        letter-spacing: -2px;
+        max-width: 350px;
+    }
+    .paragraph{
+        text-align: left;
+        letter-spacing: -0.65px;
+        max-width: 450px;
+    }
+    .ratings{
+        grid-area: rating;
+        margin-top: 27px;
+    }
+    .rating__card{
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 32px;
+        width: 443px;
+        padding: 20px 32px;
+    }
+    .rating__card:nth-child(2){
+        margin-left: 48px;
+    }
+    .rating__card:nth-child(3){
+        margin-left: 96px;
+    }
+    .rating__bar{
+        margin: 0;
+    }
+    .rating__text{
+        letter-spacing: 0.4px;
+    }
+    .testimonials{
+        grid-area: testimonial;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0;
+    }
+    .card{
+        width: calc(33.33% - 20px);
+    }
+    .card:nth-child(2){
+        margin-top: 16px;
+    }
+    .card:nth-child(3){
+        margin-top: 32px;
+    }
+    .testimonial{
+        letter-spacing: 0.15px;
+    }
+
+    .attribution { 
+        font-size: 15px; 
+    }
+    .attribution a { 
+        text-decoration: none;
+        font-weight: 600;
+        color: var(--green);
+    }
 }
