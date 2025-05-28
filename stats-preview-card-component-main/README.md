@@ -41,21 +41,34 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+In this project it was a challenge how I had to use CSS to achieve the same design result since the image was in grayscale and I had to give it a violet tint, so I used an overlay with the violet tint and then positioned it on top using absolute position.
 
-To see how you can add code snippets, see below:
+Here you can see how to achieve this effect using an overlay with mix-blend-mode filter:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<div class="img__container">
+  <img src="assets/img.jpg" alt="Image with violet tint" />
+</div>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.img__container {
+  position: relative;
+  display: inline-block;
 }
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+.img__container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: hsl(277, 64%, 61%); 
+  mix-blend-mode: multiply;
+}
+.img__container img {
+  display: block;
+  width: 100%;
+  filter: grayscale(100%);
 }
 ```
 
